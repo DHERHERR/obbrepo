@@ -1,4 +1,4 @@
-﻿import math
+import math
 from pathlib import Path
 from datetime import datetime
 from collections import Counter
@@ -293,9 +293,9 @@ def feedback_rapido():
     if st.session_state.get("emoji_mode"):
         emoji = st.session_state["emoji_mode"]
         palabras = {
-            "angry": ["frustrated", "tense", "annoyed", "agitated", "irritated"],
-            "neutral": ["calm", "normal", "stable", "indifferent", "relaxed"],
-            "happy": ["happy", "lively", "positive", "enthusiastic", "cheerful"],
+            "angry": ["Dirty", "Service", "Comfort", "Security", "Payment", "Information", "Cancelled",],
+            "neutral": ["Acceptable", "Confusing", "Crowded", "Unfriendly", "Payment"],
+            "happy": ["happy", "Comfortable", "Punctual", "Clean", "Safe"],
         }
         st.write(f"Select the words that match your {emoji} emotion:")
         seleccion = st.multiselect(
@@ -357,3 +357,4 @@ else:
 
 feedback_rapido()
 pizarron()
+
